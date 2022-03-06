@@ -1,0 +1,299 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #FDDCC9;
+}
+.header .menu a{
+   padding: 50px;
+   text-decoration: none;
+   color: #000;
+}
+.header .menu .home{
+    color: #F1C274;
+}
+.header .menu{
+    display: flex;/*para que flexbox funcione tiene que haber padding en .menu a{}*/
+    justify-content: center; /*todos los elementos o cajas se centraran*/
+}
+section .titulos{
+    text-align: center;
+}
+section .titulos .titulo{
+    border-bottom:  1px solid #000;
+
+}
+section .titulos hr{
+    width: 90%;
+    margin: auto; /*Centrar el hr*/
+}
+section h1{
+    font-size: 50px;
+}
+section .primeraLinea{
+    padding-top: 3px;
+    padding-bottom: 20px;
+}
+section .segundaLinea{
+    font-weight: normal;
+}
+main .pasteles .imgs .grupoUno, .grupoDos{
+    display: flex;
+    justify-content: space-between;  
+}
+main .pasteles img{
+    width: 100px;
+}
+
+
+
+
+/*------------------------PASTELES-----------------------------------*/
+
+.main .pasteles .contenedor-pasteles{
+    display: flex;
+    flex-direction: row;/*en filas*/
+    flex-wrap: wrap;    /*como van a ser imagenes y algunas imagenes no cabran en el margen total se pongan abajo*/
+    justify-content: center;
+    margin-left: 50px;
+}
+.main .pasteles .contenedor-pasteles .pastel{
+    width: 23%; /*el ancho de cada imagen*/ 
+    margin-bottom: 40px;    /*separar cada fila de imagenes las primeras 4 de las otras*/  
+}
+.main .pasteles .contenedor-pasteles .pastel .thumb{
+    width: 80%;
+    margin-bottom: 10px;
+}
+.main .pasteles .contenedor-pasteles .pastel .thumb img{
+    width: 100%;        /*con estos magicamente se pondran a la perfeccion o en su forma final*/
+    vertical-align: top;     
+    /* border-radius: 10px; */
+}
+.main .pasteles .contenedor-pasteles .pastel .descripcion {
+    text-align: center;/*centrar las oraciones que estan debajo de las imagenes*/
+}
+.main .pasteles .contenedor-pasteles .pastel .descripcion .nombre {
+    font-weight: 700;   /*tamaño de letra de los de google fonts(bold)*/    
+    margin-bottom: 10px;
+}
+
+/*-----------------------------------MAPA-------------------------------------------------*/
+
+main .mapa{
+    margin: 0 100px;
+    text-align: center;
+}
+main .mapa .titulo{
+    padding: 40px;
+    font-size: 20px;
+    background-color: white;
+}
+main .mapa .titulo p{
+    background-color: white;
+}
+
+
+/*------------------------CONTACTO-----------------------------------*/
+main .contacto{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+main .contacto .ubicacion, .horario{
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+/*------------------------FOOTER-----------------------------------*/
+
+/*-----------------------REDES SOCIALESS-------------------*/
+footer .redes-sociales{
+    background:#E24747;
+    /*arriba y abajo,  0 hacia los aldos*/
+    padding: 15px 0;
+}
+footer .redes-sociales .contenedor{
+    background:#E24747;
+    display: flex;  /*poner uno al lado del otro*/
+    justify-content: center;    /*centrar los iconos(prueba poner space-beetwen para mas chido xd)*/
+}
+footer .redes-sociales a{    
+    text-align: center;
+    width: 100px;
+    display: block; /*se pondran uno abajo de otro pero no importa por que se acomodara con flexbox*/
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 30px;    /*agrandar el tamaño de los iconos*/
+    /*arriba y abajo(0) y 20 hacia los lados*/
+    margin: 0 20px;
+}
+footer .redes-sociales .copy p{
+    text-align: center;
+    padding-top: 20px;
+    background-color: #E24747;
+    color: white;
+}
+
+/*los fondos de las redes sociales se pueden conseguir en https://brandcolors.net*/
+footer .redes-sociales .twitter:hover{background: #1da1f2;}
+footer .redes-sociales .facebook:hover{background:#3b5998 ;}
+footer .redes-sociales .youtube:hover{background: #cd201f;}
+footer .redes-sociales .github:hover{background: #666666;}
+footer .redes-sociales .instagram:hover{background: #3f729b;}
+
+
+
+
+/* Estilos para imagen, y los checkbox de decoracion */
+.menu .hijo{
+    margin: 30px;
+    margin-left: 50px;    
+	/* background: #2e294e; */
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+.menu .hijo .png{
+    background: yellow;
+	position: absolute;
+	bottom: 0%;
+	left: 0%;
+}
+.menu .hijo h2{
+    position: absolute;
+    right: 20%;
+    text-align: center;
+}
+/*Contenedores hijos*/
+.menu .hijo p,h3, h4, .decoracion, .grupo_decoracion, .grupo_decoracion_dos{
+    position: absolute;
+    right: 16%;
+    top: 15%;
+    text-align: center;
+}
+.menu .hijo h3{
+    right: 45%;
+    top: 30%;
+}
+.menu .hijo h4{
+    right:51.7%;
+    top:40%;
+}
+.menu .hijo .decoracion{
+    right: 48%;
+    top: 50%;
+    text-align: left;
+    
+}
+.menu .hijo .grupo_decoracion{
+    right:35%;
+    top: 50%;
+    text-align: left;
+}
+.menu .hijo .grupo_decoracion_dos{
+    right:21.5%;
+    top: 50%;
+    text-align: left;
+}
+.menu .hijo input{
+    margin-bottom: 20px;
+}
+
+
+/* JARABE */
+.menu .jarabe{/*padre*/
+    margin: 30px;
+    margin-left: 50px;    
+	/* background: #2e294e; */
+	width: 100%;
+	height: 220px;
+	position: relative;
+}
+.menu .jarabe .tipos{/*hijo1*/
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    text-align: left;
+}
+.menu .jarabe .tipos_dos{/*hijo2*/
+    position: absolute;
+    left: 10%;
+    top: 4%;
+}
+.menu .jarabe .tipos input{/*poner tipo interlineado xd*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.menu .jarabe .tipos_dos input{/*poner tipo interlineado xd*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Formulario */
+.formularioo {
+	background: #fff;
+	width: 95%;
+			/*arriba y abajo, auto: centrar horizontalmente*/
+	margin: 20px auto;*/	
+	margin: 20px;	/*margen exterior*/
+	padding: 20px;	/*margen interior*/
+	border-radius: 5px;	/*bordes de todo el contenedor*/
+}
+.formularioo input{
+	display: block;	/*para que cada recuadro se ponga uno sobre otro*/
+}
+
+
+/*seleccionar y modificar todos los inputs y sus diferentes tipos*/
+.formularioo input[type="text"],	/*acceder a los inputs de tipo texto o el que sea*/
+.formularioo input[type="number"],
+.formularioo input[type="email"],
+.formularioo textarea{
+	width: 50%;
+	padding: 20px;			
+	margin-bottom: 20px;		/*margen hacia abajo (separamiento entre cuadritos)*/
+	border-radius: 3px;
+	border: 1px solid #226fc1;	/*el borde azulito*/
+	font-family: Arial;
+	font-size: 16px;
+}
+/*limitar el tamaño que el usuario puede ampliar la enviada de mensaje*/
+.formularioo textarea {
+	min-width: 120px;	/*alto minimo*/
+	max-height: 300px;	/*alto maximo*/
+	min-width: 100%;	/*ancho minimo*/
+	max-width: 100%;	/*ancho maximo*/
+}
+.formularioo input[type="submit"]{
+	width: 200px;		/*ancho*/
+	margin:0 auto;		
+	background: #E24747;	/*le quita el fondo por que le pondra un borde*/
+	border: 1px solid #a7aca7;
+	color: white;
+	padding: 10px;
+	cursor: pointer; /*cambiar el tipo de cursor que se pone al pasar el mouse*/
+	font-size: 16px;
+	border-radius: 3px;	/*bordes redondeados*/
+}
+/*CAMBIAR BOTON AL PASAR EL MOUSE*/
+.formularioo input[type="submit"]:hover{
+	background: white;
+	color: #000;
+}
+/*CAMBIAR COLORES DE LAS CAJITAS CUANDO SE DE UN CLIC ESTAS PROPIEDADES SE MANTENDRAN*/
+.formularioo input[type="text"]:focus,	
+.formularioo input[type="email"]:focus,
+.formularioo textarea:focus {
+	border: 2px solid #4fb560;
+}
